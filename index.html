@@ -4,90 +4,260 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CT Raiz Jiu-Jitsu | Alto da Cruz</title>
-
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="shortcut icon" href="./img/faviconadc.ico" type="image/x-icon" />
   </head>
 
   <body>
     <header id="navbar">
       <div class="nav-container">
-        <h1 class="logo">RAIZ ADC</h1>
+        <a class="logo" href="index.html">RAIZ ADC</a>
 
         <nav>
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Training schedule">Programação dos treinos</a></li>
-            <li><a href="#schedule">Horários</a></li>
-            <li><a href="#plans">Planos</a></li>
-            <li><a href="#location">Localização</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/treinos.html">Treinos</a></li>
+            <li><a href="./pages/horarios.html">Horarios</a></li>
+            <li><a href="./pages/planos.html">Planos</a></li>
+            <li><a href="./pages/location.html">Localizacao</a></li>
           </ul>
         </nav>
 
-        <a href="#contact" class="btn-nav">Matricule-se</a>
-
+        <a href="./pages/planos.html" class="btn-nav">Matricule-se</a>
         <div class="menu-toggle" id="menu-toggle">☰</div>
       </div>
     </header>
 
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h2>CT Raiz Jiu-Jitsu Alto da Cruz</h2>
+    <main>
+      <section class="hero hero-main">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="./img/IMG_4261.JPG.jpeg"
+        >
+          <source src="./mp4/IMG_3858.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-decor" data-parallax="0.07"></div>
 
-        <p>Disciplina, respeito e evolução dentro e fora do tatame.</p>
+        <div class="hero-content container animate">
+          <p class="eyebrow">RAIZ ADC | Alto da Cruz</p>
+          <h1>AGENDE SUA AULA EXPERIMENTAL<span>.</span></h1>
+          <p class="lead">
+            Ambiente de disciplina, respeito e evolucao tecnica. Aqui voce
+            encontra suporte completo para comecar no Jiu-Jitsu e crescer dentro
+            e fora do tatame.
+          </p>
+          <div class="hero-actions">
+            <a href="./pages/planos.html" class="btn-primary"
+              >Agendar uma aula</a
+            >
+            <a href="./pages/horarios.html" class="btn-outline">Ver horarios</a>
+          </div>
+        </div>
+      </section>
 
-        <a href="#classes" class="btn-hero">Ver aulas</a>
+      <section class="section">
+        <div class="container split">
+          <article class="panel animate">
+            <h2 class="section-title">
+              SOMOS UMA ACADEMIA DE ALTA QUALIDADE<span>.</span>
+            </h2>
+            <p class="section-subtitle">
+              Nossa academia e um espaco de evolucao atraves do Jiu-Jitsu, onde
+              disciplina, respeito e superacao fazem parte de cada treino.
+            </p>
+          </article>
+
+          <article class="panel highlight-panel animate">
+            <h3>Metodologia de treinos</h3>
+            <p>
+              Nosso objetivo e desenvolver atletas e pessoas mais fortes, em um
+              ambiente de aprendizado, uniao e crescimento.
+            </p>
+            <ul>
+              <li>Turmas para iniciantes, intermediarios e avancados</li>
+              <li>Treinos tecnicos e sparring com acompanhamento</li>
+              <li>Preparacao para competicao e defesa pessoal</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="container card-grid">
+          <article class="card animate">
+            <h3>Treinos</h3>
+            <p>
+              Progressao tecnica estruturada para acelerar sua evolucao sem
+              pular etapas.
+            </p>
+          </article>
+
+          <article class="card animate">
+            <h3>Horarios</h3>
+            <p>
+              Grade semanal organizada para encaixar treino com rotina de
+              trabalho e estudo.
+            </p>
+          </article>
+
+          <article class="card animate">
+            <h3>Planos</h3>
+            <p>
+              Modelos flexiveis para quem esta comecando e para quem quer treino
+              ilimitado.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="schedule">
+        <div class="container">
+          <h2 class="section-title animate">Horarios e Dias Disponiveis</h2>
+          <p class="section-subtitle animate">
+            Escolha o melhor horario para treinar e mantenha sua constancia no
+            tatame durante a semana.
+          </p>
+
+          <table class="schedule-table animate">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Iniciantes</th>
+                <th>Intermediarios</th>
+                <th>Avancados</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Segunda</td>
+                <td>18h - 19h</td>
+                <td>19h - 20h</td>
+                <td>20h - 21h</td>
+              </tr>
+              <tr>
+                <td>Quarta</td>
+                <td>18h - 19h</td>
+                <td>19h - 20h</td>
+                <td>20h - 21h</td>
+              </tr>
+              <tr>
+                <td>Sexta</td>
+                <td>18h - 19h</td>
+                <td>19h - 20h</td>
+                <td>20h - 21h</td>
+              </tr>
+              <tr>
+                <td>Sabado</td>
+                <td>09h - 10h</td>
+                <td>10h - 11h</td>
+                <td>11h - 12h</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="cta-band animate">
+            <h3>Comece no Jiu-Jitsu hoje</h3>
+            <p>
+              Voce tem direito a duas aulas experimentais para conhecer a
+              equipe, o metodo e o ambiente da academia.
+            </p>
+            <a href="./pages/planos.html" class="btn-primary"
+              >Quero me matricular</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title animate">Estrutura do CT</h2>
+          <div class="card-grid">
+            <article class="media-tile animate">
+              <img
+                class="face-card-1"
+                src="./img/IMG_4207.JPG.jpeg"
+                alt="Treino tecnico no tatame"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Treino tecnico</p>
+            </article>
+            <article class="media-tile animate">
+              <img
+                class="face-card-2"
+                src="./img/IMG_4250.JPG.jpeg"
+                alt="Equipe em dia de treino"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Equipe unida</p>
+            </article>
+            <article class="media-tile animate">
+              <img
+                class="face-card-3"
+                src="./img/IMG_1832.JPG.jpeg"
+                alt="Alunos em atividade"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Ambiente de evolucao</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>CT Raiz Jiu-Jitsu</h3>
+          <p>
+            Disciplina, respeito e evolucao com uma equipe comprometida com seu
+            desenvolvimento no tatame.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegacao</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/treinos.html">Treinos</a></li>
+            <li><a href="./pages/horarios.html">Horarios</a></li>
+            <li><a href="./pages/planos.html">Planos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-list">
+            <li><a href="tel:+557191604308">(71) 9160-4308</a></li>
+            <li>
+              <a
+                href="https://wa.me/557191604308"
+                target="_blank"
+                rel="noopener noreferrer"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ctraizjiujitsuglebac/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>R. Alto da Cruz, 40 - Alto da Cruz, Camaçari - BA, 42803-135</p>
+          <p>(c) 2026 CT Raiz Jiu-Jitsu</p>
+        </div>
       </div>
-    </section>
-
-    <section id="about" class="section animate">
-      <h2>Sobre o CT</h2>
-      <p>
-        O CT Raiz Jiu-Jitsu Alto da Cruz é um espaço dedicado ao desenvolvimento
-        físico e mental através do Jiu-Jitsu. Treine com uma equipe comprometida
-        com evolução e respeito.
-      </p>
-    </section>
-
-    <section id="classes" class="section animate">
-      <h2>Aulas</h2>
-      <p>
-        Oferecemos aulas para iniciantes, intermediários e avançados. Também
-        temos treinos específicos para competição.
-      </p>
-    </section>
-    <section id="schedule" class="section animate">
-      <h2>Horários de Treino</h2>
-      <table class="schedule-table">
-        <thead>
-          <tr>
-            <th>Dia</th>
-            <th>Iniciantes</th>
-            <th>Intermediários</th>
-            <th>Avançados</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Segunda</td>
-            <td>18h – 19h</td>
-            <td>19h – 20h</td>
-            <td>20h – 21h</td>
-          </tr>
-          <tr>
-            <td>Quarta</td>
-            <td>18h – 19h</td>
-            <td>19h – 20h</td>
-            <td>20h – 21h</td>
-          </tr>
-          <tr>
-            <td>Sexta</td>
-            <td>18h – 19h</td>
-            <td>19h – 20h</td>
-            <td>20h – 21h</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
   </body>

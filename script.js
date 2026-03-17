@@ -104,3 +104,73 @@ if (parallaxItems.length && !reduceMotion) {
   handleParallax();
   window.addEventListener("scroll", onScroll, { passive: true });
 }
+
+const carousels = [...document.querySelectorAll("[data-carousel]")];
+
+carousels.forEach((carousel) => {
+  const track = carousel.querySelector("[data-carousel-track]");
+  const slides = [...carousel.querySelectorAll("[data-carousel-slide]")];
+  const dots = [...carousel.querySelectorAll("[data-carousel-dot]")];
+
+  if (!(track instanceof HTMLElement) || slides.length < 2) return;
+
+  const intervalMs = Number(carousel.getAttribute("data-interval")) || 4200;
+  let currentIndex = 0;
+  let timerId = null;
+
+  const goTo = (nextIndex) => {
+    currentIndex = (nextIndex + slides.length) % slides.length;
+    track.style.transform = `translate3d(-${currentIndex * 100}%, 0, 0)`;
+
+    slides.forEach((slide, index) => {
+      slide.classList.toggle("is-active", index === currentIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      const active = index === currentIndex;
+      dot.classList.toggle("is-active", active);
+      dot.setAttribute("aria-current", String(active));
+    });
+  };
+
+  const stopAutoPlay = () => {
+    if (timerId === null) return;
+    window.clearInterval(timerId);
+    timerId = null;
+  };
+
+  const startAutoPlay = () => {
+    if (document.hidden) return;
+    stopAutoPlay();
+    timerId = window.setInterval(() => {
+      goTo(currentIndex + 1);
+    }, intervalMs);
+  };
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      goTo(index);
+      startAutoPlay();
+    });
+  });
+
+  carousel.addEventListener("mouseenter", stopAutoPlay);
+  carousel.addEventListener("mouseleave", startAutoPlay);
+  carousel.addEventListener("focusin", stopAutoPlay);
+  carousel.addEventListener("focusout", (event) => {
+    const nextTarget = event.relatedTarget;
+    if (nextTarget instanceof Node && carousel.contains(nextTarget)) return;
+    startAutoPlay();
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      stopAutoPlay();
+      return;
+    }
+    startAutoPlay();
+  });
+
+  goTo(0);
+  startAutoPlay();
+});

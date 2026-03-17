@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horarios | CT Raiz Jiu-Jitsu</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="shortcut icon" href="./img/faviconadc.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/base.css" />
+    <link rel="stylesheet" href="../style/horarios.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/faviconadc.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header id="navbar">
@@ -15,9 +20,9 @@
           <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="./treinos.html">Treinos</a></li>
-            <li><a href="./horarios.html">Horarios</a></li>
+            <li><a href="./horarios.html">Horários</a></li>
             <li><a href="./planos.html">Planos</a></li>
-            <li><a href="./location.html">Localizacao</a></li>
+            <li><a href="./location.html">Localização</a></li>
           </ul>
         </nav>
         <a href="./planos.html" class="btn-nav">Matricule-se</a>
@@ -34,10 +39,10 @@
         />
         <div class="hero-decor" data-parallax="0.05"></div>
         <div class="hero-content container animate">
-          <p class="eyebrow">Horarios e dias</p>
+          <p class="eyebrow">Horários e dias</p>
           <h1>Treinos organizados para sua rotina<span>.</span></h1>
           <p class="lead">
-            Escolha o melhor turno para manter constancia e evoluir com
+            Escolha o melhor turno para manter constância e evoluir com
             qualidade.
           </p>
         </div>
@@ -47,52 +52,73 @@
         <div class="container">
           <h2 class="section-title animate">Grade semanal</h2>
           <p class="section-subtitle animate">
-            Turmas divididas por nivel para garantir seguranca e progresso
-            tecnico.
+            Horários organizados em turmas separadas de adulto e kids.
           </p>
 
-          <table class="schedule-table animate">
-            <thead>
-              <tr>
-                <th>Dia</th>
-                <th>Iniciantes</th>
-                <th>Intermediarios</th>
-                <th>Avancados</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Segunda</td>
-                <td>18h - 19h</td>
-                <td>19h - 20h</td>
-                <td>20h - 21h</td>
-              </tr>
-              <tr>
-                <td>Terca</td>
-                <td>17h - 18h</td>
-                <td>19h - 20h</td>
-                <td>20h - 21h</td>
-              </tr>
-              <tr>
-                <td>Quarta</td>
-                <td>18h - 19h</td>
-                <td>19h - 20h</td>
-                <td>20h - 21h</td>
-              </tr>
-              <tr>
-                <td>Sexta</td>
-                <td>18h - 19h</td>
-                <td>19h - 20h</td>
-                <td>20h - 21h</td>
-              </tr>
-              <tr>
-                <td>Sabado</td>
-                <td>09h - 10h</td>
-                <td>10h - 11h</td>
-                <td>11h - 12h</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="schedule-group animate">
+            <h3 class="schedule-group-title">Turmas Adulto</h3>
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Turma</th>
+                  <th>Dias</th>
+                  <th>Horário</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Iniciantes</td>
+                  <td>Segunda, Quarta e Sexta</td>
+                  <td>06:00 as 07:00</td>
+                </tr>
+                <tr>
+                  <td>Iniciantes</td>
+                  <td>Terça, Quinta e Sexta</td>
+                  <td>19:00 as 20:30</td>
+                </tr>
+                <tr>
+                  <td>Intermediaria/Avancada</td>
+                  <td>Segunda, Quarta e Sexta</td>
+                  <td>19:00 as 20:30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="schedule-group animate">
+            <h3 class="schedule-group-title">Turmas Kids</h3>
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Turma</th>
+                  <th>Dias</th>
+                  <th>Horário</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kids</td>
+                  <td>Terça e Quinta</td>
+                  <td>17:00 as 18:00</td>
+                </tr>
+                <tr>
+                  <td>Kids</td>
+                  <td>Terça e Quinta</td>
+                  <td>18:00 as 19:00</td>
+                </tr>
+                <tr>
+                  <td>Kids</td>
+                  <td>Segunda e Quarta</td>
+                  <td>18:00 as 19:00</td>
+                </tr>
+                <tr>
+                  <td>Super Kids (Baby)</td>
+                  <td>Segunda e Quarta</td>
+                  <td>17:00 as 18:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <div class="card-grid">
             <article class="card animate">
@@ -126,7 +152,7 @@
         <div class="footer-brand">
           <h3>CT Raiz Jiu-Jitsu</h3>
           <p>
-            Disciplina, respeito e evolucao com uma equipe comprometida com seu
+            Disciplina, respeito e evolução com uma equipe comprometida com seu
             desenvolvimento no tatame.
           </p>
         </div>
@@ -144,10 +170,10 @@
         <div class="footer-col">
           <h4>Contato</h4>
           <ul class="footer-list">
-            <li><a href="tel:+557191604308">(71) 9160-4308</a></li>
+            <li><a href="tel:+557182553737">(71) 8255-3737</a></li>
             <li>
               <a
-                href="https://wa.me/557191604308"
+                href="https://wa.me/557182553737"
                 target="_blank"
                 rel="noopener noreferrer"
                 >WhatsApp</a
@@ -155,7 +181,7 @@
             </li>
             <li>
               <a
-                href="https://www.instagram.com/ctraizjiujitsuglebac/"
+                href="https://www.instagram.com/adcraizjiujitsu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Instagram</a

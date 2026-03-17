@@ -1,0 +1,70 @@
+.hero-image.face-hero-horarios {
+  object-position: 50% 42%;
+}
+.schedule-group {
+  margin-top: 28px;
+}
+
+.schedule-group + .schedule-group {
+  margin-top: 36px;
+}
+
+.schedule-group-title {
+  font-size: clamp(1.4rem, 3.6vw, 2.2rem);
+  margin-bottom: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.schedule-group .schedule-table {
+  margin-top: 12px;
+}
+
+.schedule-table {
+  width: min(980px, 100%);
+  margin: 32px auto 0;
+  border-collapse: collapse;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.58);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid var(--line);
+  padding: 14px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background: var(--accent);
+  color: #111;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+}
+
+.schedule-table td {
+  color: #f2f2f2;
+}
+
+.schedule-table tbody tr:hover td {
+  background: rgba(249, 207, 31, 0.14);
+}
+
+@media (max-width: 620px) {
+  .schedule-table {
+    font-size: 0.86rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 10px 8px;
+  }
+
+  .hero-image.face-hero-horarios {
+    object-position: 50% 36%;
+  }
+}

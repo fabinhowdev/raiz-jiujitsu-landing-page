@@ -1,0 +1,121 @@
+.hero-image.face-hero-equipe {
+  object-position: 50% 34%;
+}
+
+.team-group + .team-group {
+  margin-top: 40px;
+}
+
+.team-heading {
+  margin-bottom: 14px;
+}
+
+.team-heading h3 {
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem);
+  color: var(--accent);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.team-grid-black-belts {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.team-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  box-shadow: var(--shadow);
+  transition: transform 0.28s ease, border-color 0.28s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(249, 207, 31, 0.5);
+}
+
+.team-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 6px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.team-card p {
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.photo-gabriel {
+  object-position: 50% 26%;
+}
+
+.photo-lyvia {
+  object-position: 50% 25%;
+}
+
+.photo-alexandre {
+  object-position: 50% 30%;
+}
+
+.photo-lucas {
+  object-position: 50% 24%;
+}
+
+.photo-ryan {
+  object-position: 50% 24%;
+}
+
+.photo-rayan {
+  object-position: 50% 24%;
+}
+
+.photo-henrique {
+  object-position: 50% 24%;
+}
+
+.photo-andre {
+  object-position: 50% 22%;
+}
+
+.photo-thiago {
+  object-position: 50% 26%;
+}
+
+@media (max-width: 620px) {
+  .hero-image.face-hero-equipe {
+    object-position: 50% 32%;
+  }
+
+  .team-grid,
+  .team-grid-black-belts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .team-card {
+    padding: 10px;
+  }
+
+  .team-card p {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .team-grid,
+  .team-grid-black-belts {
+    grid-template-columns: 1fr;
+  }
+}
